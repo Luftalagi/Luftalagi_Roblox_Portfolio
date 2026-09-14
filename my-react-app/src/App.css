@@ -605,6 +605,126 @@
   .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .nav {
+    padding: 1rem 1rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-content {
+    padding: 0 1.25rem;
+    padding-bottom: 8vh;
+  }
+
+  .credentials-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .content-section {
+    padding: 5rem 1.25rem;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+
+  .stats-row {
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .pricing-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .page-hero {
+    padding: 7rem 1.25rem 3rem;
+    min-height: 40vh;
+  }
+
+  .projects-section {
+    padding: 1.5rem 1.25rem 4rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .project-name {
+    font-size: 16px;
+  }
+
+  .project-details {
+    font-size: 14px;
+  }
+
+  .viewer-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .viewer-btn-left {
+    left: 0.5rem;
+  }
+
+  .viewer-btn-right {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.75rem;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: 0.05em;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .stat {
+    min-width: 80px;
+  }
+
+  .credential-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .credential-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .credential-title {
+    font-size: 14px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
 }
 
 /* ── Active Nav Link ── */

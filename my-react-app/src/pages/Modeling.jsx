@@ -59,7 +59,6 @@ const projects = [
     images: [tanker1],
   },
 ]
-
 export default function Modeling() {
   return (
     <DisciplinePage
