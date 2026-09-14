@@ -64,7 +64,7 @@ export default function Modeling() {
     <DisciplinePage
       tag="MODELING"
       title="3D Modeling"
-      subtitle="Custom meshes and assets built for Roblox experiences"
+      subtitle="Custom meshes and assets built for Roblox experiences. I have been building the longest for a total of 8 years."
       tools={tools}
       projects={projects}
       activePage="modeling"

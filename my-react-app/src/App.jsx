@@ -9,6 +9,9 @@ import luauLogo from './assets/Luau_Logo.png'
 import pythonLogo from './assets/python.png'
 import cLogo from './assets/C_Logo.png'
 import jsLogo from './assets/JavaScript-logo.png'
+import venmoLogo from './assets/Venmo_logo.png'
+import cashappLogo from './assets/Square_Cash_app_logo.svg.webp'
+import discordIcon from './assets/discord.svg'
 import './App.css'
 
 function useWireframeReveal(canvasRef, heroSectionRef) {
@@ -514,18 +517,14 @@ function App() {
                 </svg>
               </div>
               <div className="payment-icon" title="Venmo">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.727 0c.909 1.5 1.318 3.046 1.318 5.001 0 6.227-5.318 14.318-9.636 20H4.318L1.09 1.636l7.273-.682 1.727 13.91C12.182 11.318 14.5 6.182 14.5 3.409c0-1.864-.318-3.136-.818-4.091L20.727 0z" fill="currentColor"/>
-                </svg>
+                <img src={venmoLogo} alt="Venmo" className="payment-logo" />
               </div>
               <div className="payment-icon" title="CashApp">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23.59 3.475A5.079 5.079 0 0 0 20.525.41C19.655.072 18.622 0 16.362 0H7.638c-2.26 0-3.293.072-4.163.41A5.079 5.079 0 0 0 .41 3.475C.072 4.345 0 5.378 0 7.638v8.724c0 2.26.072 3.293.41 4.163a5.079 5.079 0 0 0 3.065 3.065c.87.338 1.903.41 4.163.41h8.724c2.26 0 3.293-.072 4.163-.41a5.079 5.079 0 0 0 3.065-3.065c.338-.87.41-1.903.41-4.163V7.638c0-2.26-.072-3.293-.41-4.163zM17.793 14.09c-.347.548-.925.863-1.538.863a1.876 1.876 0 0 1-.497-.07l-1.904-.574c-.504-.152-.678-.068-.823.17l-.428.637a.586.586 0 0 1-.455.272.57.57 0 0 1-.478-.226l-.99-1.267-.075-.003c-1.627-.062-3.003-.725-3.898-1.864-.512-.651-.82-1.414-.92-2.23a.578.578 0 0 1 .165-.472.584.584 0 0 1 .464-.186l1.638.07c.266.012.415.174.468.329.16.465.437.88.812 1.202.552.474 1.273.63 1.708.388l.138-.077-1.003-1.803c-.458-.824-.627-1.73-.472-2.546.186-.97.812-1.741 1.717-2.112.443-.182.917-.27 1.387-.27.586 0 1.162.141 1.669.408.503.265.908.652 1.172 1.12a.58.58 0 0 1-.183.76l-1.308.855a.587.587 0 0 1-.766-.115 1.113 1.113 0 0 0-.505-.348c-.357-.136-.755-.035-.993.252-.152.184-.195.41-.12.621l.088.239 1.144 2.055c.123.22.097.405.073.483l1.584.474c.372.111.675.374.838.728a1.551 1.551 0 0 1 .055 1.16z" fill="currentColor"/>
-                </svg>
+                <img src={cashappLogo} alt="CashApp" className="payment-logo" />
               </div>
               <div className="payment-icon" title="Bank Transfer">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 20h20v2H2v-2zm1-7h2v7H3v-7zm4 0h2v7H7v-7zm4 0h2v7h-2v-7zm4 0h2v7h-2v-7zm4 0h2v7h-2v-7zM1 11l11-7 11 7v2H1v-2z" fill="currentColor"/>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/>
                 </svg>
               </div>
             </div>
@@ -534,8 +533,31 @@ function App() {
           <div className="pricing-cta">
             <p className="pricing-cta-text">Interested? Reach out to discuss your project.</p>
             <a href="https://discord.com/users/730589678868365393" target="_blank" rel="noopener noreferrer" className="btn-primary">Get In Touch</a>
-            <p className="discord-tag">Luftalagi</p>
+            <p className="discord-tag"><img src={discordIcon} alt="Discord" className="discord-icon" />Luftalagi</p>
           </div>
+        </div>
+      </section>
+
+      <section className="explore-section">
+        <p className="section-label">Portfolio</p>
+        <h2 className="section-title">Explore My Work</h2>
+        <div className="explore-grid">
+          <Link to="/scripting" className="explore-card">
+            <span className="explore-name">Scripting</span>
+            <span className="explore-desc">Luau systems & gameplay logic</span>
+          </Link>
+          <Link to="/modeling" className="explore-card">
+            <span className="explore-name">Modeling</span>
+            <span className="explore-desc">3D assets built in Blender</span>
+          </Link>
+          <Link to="/building" className="explore-card">
+            <span className="explore-name">Building</span>
+            <span className="explore-desc">Environments & structures</span>
+          </Link>
+          <Link to="/environments" className="explore-card">
+            <span className="explore-name">Environments</span>
+            <span className="explore-desc">Lighting, atmosphere & scenes</span>
+          </Link>
         </div>
       </section>
     </>

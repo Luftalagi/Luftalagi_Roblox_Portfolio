@@ -498,11 +498,6 @@
   transform: translateY(-2px);
 }
 
-.pricing-card.featured {
-  border-color: var(--accent);
-  background: rgba(255, 255, 255, 0.03);
-}
-
 .pricing-tier {
   font-family: var(--heading);
   font-size: 15px;
@@ -592,6 +587,20 @@
   margin-bottom: 1.5rem;
 }
 
+.payment-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  filter: grayscale(1) brightness(1.5);
+}
+
+.payment-icon:hover .payment-logo {
+  opacity: 1;
+  filter: none;
+}
+
 .discord-tag {
   font-family: var(--mono);
   font-size: 13px;
@@ -599,6 +608,81 @@
   opacity: 0.5;
   margin-top: 0.75rem;
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.discord-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  filter: grayscale(1) brightness(2);
+}
+
+/* ── Explore Section ── */
+.explore-section {
+  padding: 6rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none;
+  transition: border-color 0.3s, background 0.3s, transform 0.2s;
+}
+
+.explore-card:hover {
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+.explore-name {
+  font-family: var(--heading);
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-h);
+}
+
+.explore-card:hover .explore-name {
+  color: var(--accent);
+}
+
+.explore-desc {
+  font-family: var(--body);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text);
+  opacity: 0.5;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 480px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .explore-section {
+    padding: 4rem 1.25rem;
+  }
 }
 
 @media (max-width: 768px) {
