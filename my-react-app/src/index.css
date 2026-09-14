@@ -1,0 +1,59 @@
+:root {
+  --bg: #000000;
+  --text: #d7d7d7;
+  --text-h: #ffffff;
+  --theme: #e68200;
+  --accent: var(--theme);
+  --accent-glow: rgba(230, 130, 0, 0.15);
+  --border: #1a1a1a;
+  --heading: 'Fjalla One', sans-serif;
+  --body: 'Barlow', sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 20px/1.6 var(--body);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
