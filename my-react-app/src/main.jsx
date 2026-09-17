@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import './index.css'
 import App from './App.jsx'
 import Modeling from './pages/Modeling.jsx'
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/building" element={<Building />} />
         <Route path="/environments" element={<Environments />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   </StrictMode>,
 )
